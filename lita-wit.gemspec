@@ -3,10 +3,10 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Damien Bastin"]
   spec.email         = ["damien.bastin@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.description   = "A Lita handler for Wit"
+  spec.summary       = "Receive structured intentions from unstructured sentences using a Lita bot and Wit AI"
+  spec.homepage      = "https://github.com/dbastin/lita-wit"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
