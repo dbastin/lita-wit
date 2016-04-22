@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Damien Bastin"]
   spec.email         = ["damien.bastin@gmail.com"]
   spec.description   = "A Lita handler for Wit"
-  spec.summary       = "Receive structured intentions from unstructured sentences using a Lita bot and Wit AI"
+  spec.summary       = "Receive structured intentions from unstructured sentences using a Lita bot and Wit."
   spec.homepage      = "https://github.com/dbastin/lita-wit"
   spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
