@@ -15,8 +15,12 @@ gem "lita-wit"
 
 ## Configuration
 
-TODO: You'll need to add the wit.ai API Bearer key.
+You'll need to add the wit.ai API Bearer key.
+
+``` ruby
+config.wit_token = token-here
+```
 
 ## Usage
 
-TODO: So few things to do.
+Rock!

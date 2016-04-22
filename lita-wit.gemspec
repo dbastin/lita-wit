@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-wit"
-  spec.version       = "0.1.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["Damien Bastin"]
   spec.email         = ["damien.bastin@gmail.com"]
   spec.description   = "TODO: Add a description"
