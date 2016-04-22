@@ -1,10 +1,16 @@
 require "simplecov"
+
 require "coveralls"
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-  SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
-]
-SimpleCov.start { add_filter "/spec/" }
+Coveralls.wear!
+
+SimpleCov.start 'rails' do
+  SimpleCov.formatters = [
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+  ]
+
+  add_filter '/spec/'
+end
 
 require "lita-wit"
 require "lita/rspec"
