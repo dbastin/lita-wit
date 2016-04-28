@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.wit.ai/converse?q=Hello&session_id=unique-1234
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.wit.20160330+json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wit.ai
+      Authorization:
+      - Bearer 72XXMP6VAKG2SAPLTXVQS6H5PBLVQIJW
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Date:
+      - Thu, 28 Apr 2016 15:14:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '118'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "confidence" : 1,
+          "type" : "merge",
+          "entities" : {
+            "intent" : [ {
+              "value" : "greeting"
+            } ]
+          }
+        }
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 15:14:39 GMT
+- request:
+    method: post
+    uri: https://api.wit.ai/converse?session_id=unique-1234
+    body:
+      encoding: UTF-8
+      string: '{"intent":"greeting"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.wit.20160330+json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wit.ai
+      Authorization:
+      - Bearer 72XXMP6VAKG2SAPLTXVQS6H5PBLVQIJW
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Date:
+      - Thu, 28 Apr 2016 15:14:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "confidence" : 0.5878773927688599,
+          "type" : "msg",
+          "msg" : "Hi. Ask me about the weather. Anywhere. Go on!"
+        }
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 15:14:40 GMT
+- request:
+    method: post
+    uri: https://api.wit.ai/converse?session_id=unique-1234
+    body:
+      encoding: UTF-8
+      string: '{"intent":"greeting"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.wit.20160330+json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wit.ai
+      Authorization:
+      - Bearer 72XXMP6VAKG2SAPLTXVQS6H5PBLVQIJW
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Date:
+      - Thu, 28 Apr 2016 15:14:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "confidence" : 0.9979153275489807,
+          "type" : "stop"
+        }
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 15:14:41 GMT
+recorded_with: VCR 3.0.1
