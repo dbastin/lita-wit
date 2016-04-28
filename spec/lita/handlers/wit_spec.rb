@@ -9,5 +9,12 @@ describe Lita::Handlers::Wit, lita_handler: true do
         expect(replies.last).to eq('Hi')
       end
     end
+
+    context 'unhandled not directed at lita' do
+      it 'ignores the message' do
+        send_message('Hi')
+        expect(replies.last).to be_nil
+      end
+    end
   end
 end
