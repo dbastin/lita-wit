@@ -11,6 +11,8 @@ Something like this Slack snippet...
 
 ![Example of a conversation with Lita](https://raw.github.com/dbastin/lita-wit/master/example.png)
 
+This is a conversation with a publically accessible pre-configured Wit.ai chatbot - https://wit.ai/dbastin/Lita
+
 Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs.
 
 ## Installation
