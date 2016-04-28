@@ -7,12 +7,14 @@ This is a [Lita](https://www.lita.io) handler to converse with [Wit.ai](https://
 
 Using Lita and Wit.ai, you can easily create text or voice based bots that humans can chat with on their preferred messaging platform.
 
-Something like this Slack snippet...
+Something like this little Slack snippet...
 
 ![Example of a conversation with Lita](https://raw.github.com/dbastin/lita-wit/master/example.png)
 
-This above snippet is a conversation with a publically accessible pre-configured Wit.ai chatbot - https://wit.ai/dbastin/Lita.
-As you can guess, Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs.
+The above snippet is a conversation with a Lita bot configured with a Slack adapter and this lita-wit handler.
+This lita-wit handler is conversing with a publically accessible pre-configured Wit.ai chatbot - https://wit.ai/dbastin/Lita.
+
+Once you get it up an running, you'll see that Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs. It's all very clever.
 
 ## Installation
 
@@ -24,7 +26,7 @@ gem "lita-wit"
 
 ## Configuration
 
-You'll need to add the Wit.ai API server access token.
+You'll need to add the Wit.ai API server access token. Please sign up and fork the pre-configured Wit.ai bot.
 
 ``` ruby
 Lita.configure do |config|
