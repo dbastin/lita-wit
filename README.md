@@ -3,7 +3,15 @@
 [![Build Status](https://travis-ci.org/dbastin/lita-wit.png?branch=master)](https://travis-ci.org/dbastin/lita-wit)
 [![Coverage Status](https://coveralls.io/repos/dbastin/lita-wit/badge.png)](https://coveralls.io/r/dbastin/lita-wit)
 
-Receive structured intentions from unstructured sentences using a [Lita](https://www.lita.io) bot and [Wit](https://www.wit.ai).
+This is a [Lita](https://www.lita.io) handler to converse with [Wit.ai](https://www.wit.ai)
+
+Using Lita and Wit.ai, you can easily create text or voice based bots that humans can chat with on their preferred messaging platform.
+
+Something like this Slack snippet...
+
+![Example of a conversation with Lita](https://raw.github.com/dbastin/lita-wit/master/example.png)
+
+Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs.
 
 ## Installation
 
@@ -15,7 +23,7 @@ gem "lita-wit"
 
 ## Configuration
 
-You'll need to add the wit.ai API server access token.
+You'll need to add the Wit.ai API server access token.
 
 ``` ruby
 Lita.configure do |config|
@@ -28,9 +36,19 @@ end
 
 ## Usage
 
-Rock it!
+Just send a message mentioning your robot by it's name or alias, either directly as a command or anywhere else in the message.
 
-## Thanks Go To
+```
+> Lita, is it raining in Istanbul?
+#=> Sorry, I don't know what the weather is like in Istanbul. I'm just a simple chatbot who loves a chat.
+
+> Ok. Tell me if it is snowing lita.
+#=> Where exactly?
+```
+
+Your robot's name will be stripped from the message we send to Wit.ai
+
+## Thanks
 
 [Tom Beynon](https://github.com/tombeynon) - Great handler for Cleverbot [lita-ai](https://github.com/tombeynon/lita-ai)
 
