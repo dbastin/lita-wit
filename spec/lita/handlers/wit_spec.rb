@@ -8,6 +8,12 @@ describe Lita::Handlers::Wit, lita_handler: true do
         send_message('Hi Lita')
         expect(replies.last).to eq('Hi')
       end
+
+      it 'recognizes aliases' do
+        robot.alias = 'Rita'
+        send_message('Hi Rita')
+        expect(replies.last).to eq('Hi')
+      end
     end
 
     context 'unhandled not directed at lita' do
