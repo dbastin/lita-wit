@@ -14,7 +14,7 @@ Something like this little Slack snippet...
 The above snippet is a conversation with a Lita bot configured with a Slack adapter and this lita-wit handler.
 This lita-wit handler is conversing with a publically accessible pre-configured Wit.ai chatbot - https://wit.ai/dbastin/Lita.
 
-Once you get it up an running, you'll see that Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs. It's all very clever.
+Once you get it up and running, you'll see that Wit.ai not only enables your robot to understand humans, it also helps you discover their unforeseen needs. It's all very clever.
 
 ## Installation
 
