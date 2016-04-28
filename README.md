@@ -24,3 +24,8 @@ config.wit_token = token-here
 ## Usage
 
 Rock!
+
+## Thanks Go To
+
+[Tom Beynon](https://github.com/tombeynon) - Great handler for Cleverbot [lita-ai](https://github.com/tombeynon/lita-ai)
+
