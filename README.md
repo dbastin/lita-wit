@@ -55,3 +55,6 @@ Your robot's name will be stripped from the message we send to Wit.ai
 
 [Tom Beynon](https://github.com/tombeynon) - Great handler for Cleverbot [lita-ai](https://github.com/tombeynon/lita-ai)
 
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
