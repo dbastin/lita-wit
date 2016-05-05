@@ -7,8 +7,8 @@ module Lita
 
       def initialize(robot)
         super
-        @bickle = Lita::Utils::Bickle.new(robot)
-        @client = Lita::Services::WitClient.new(robot)
+        @bickle = Utils::Bickle.new(robot)
+        @client = Services::WitClient.new(robot)
       end
 
       def handle(payload)

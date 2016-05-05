@@ -11,7 +11,7 @@ module Lita
       def run_actions(session_id, message, context={}, max_steps=DEFAULT_MAX_STEPS)
         actions = @actions_class.new(@robot).actions(message.source)
         @wit = ::Wit.new(@token, actions)
-        stripped = Lita::Utils::AliasStripper.strip(@robot, message)
+        stripped = Utils::AliasStripper.strip(@robot, message)
         @wit.run_actions(session_id, stripped.body, context, max_steps)
       end
     end

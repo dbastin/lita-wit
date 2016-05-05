@@ -8,8 +8,8 @@ module Lita
             @robot.send_message(source, msg)
           },
           :merge => -> (session_id, context, entities, msg) {
-            Lita::Utils::ContextPiper.pipe(context, entities, 'intent', 'intent')
-            Lita::Utils::ContextPiper.pipe(context, entities, 'location', 'loc')
+            Utils::ContextPiper.pipe(context, entities, 'intent', 'intent')
+            Utils::ContextPiper.pipe(context, entities, 'location', 'loc')
             context
           }
         })
