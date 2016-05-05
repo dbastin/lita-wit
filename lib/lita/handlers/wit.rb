@@ -3,6 +3,7 @@ module Lita
     class Wit < Handler
       on :unhandled_message, :handle
       config :server_access_token, type: String, required: true
+      config :actions_class, type: Class, required: true
 
       def initialize(robot)
         super

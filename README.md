@@ -27,13 +27,17 @@ gem "lita-wit"
 ## Configuration
 
 You'll need to add the Wit.ai API server access token. Please sign up and fork the pre-configured Wit.ai bot.
+You can configure the callback actions the robot performs by specifying a different `actions_class`
 
 ``` ruby
 Lita.configure do |config|
   # config... config... config...
 
-  # https://wit.ai/dbastin/Lita... Fork it!
+  # https://wit.ai/dbastin/Lita... (fork it!)
   config.handlers.wit.server_access_token = '72XXMP6VAKG2SAPLTXVQS6H5PBLVQIJW'
+
+  # default actions are in this class... (specify your own if you like)
+  config.handlers.wit.actions_class = Lita::Actions::Weather
 end
 ```
 
