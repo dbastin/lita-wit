@@ -14,7 +14,6 @@ SimpleCov.start 'rails' do
 end
 
 require 'lita-wit'
-Wit.logger.level = Logger::WARN
 
 require 'lita/rspec'
 require 'lita_config'

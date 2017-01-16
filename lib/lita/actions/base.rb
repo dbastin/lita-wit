@@ -8,7 +8,7 @@ module Lita
 
       def actions(_source)
         {
-          error: lambda do |session_id, context, error|
+          error: lambda do |request|
             # Required, but is never ever called
           end
         }
