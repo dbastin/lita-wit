@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: false
 require 'spec_helper'
 
 describe Lita::Handlers::Wit, lita_handler: true do
