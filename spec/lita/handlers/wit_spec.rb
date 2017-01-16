@@ -1,7 +1,7 @@
+# frozen_string_literal: true
 require 'spec_helper'
 
 describe Lita::Handlers::Wit, lita_handler: true do
-
   describe 'handling unhandled_message' do
     let(:source) { double(:source) }
 
