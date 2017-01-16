@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Lita
   module Actions
     class Base
@@ -5,11 +6,11 @@ module Lita
         @robot = robot
       end
 
-      def actions(source)
+      def actions(_source)
         {
-          :error => -> (session_id, context, error) {
+          error: lambda do |session_id, context, error|
             # Required, but is never ever called
-          }
+          end
         }
       end
     end

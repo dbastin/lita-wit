@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 Lita.configure do |config|
   config.robot.name = 'Lita'
   config.robot.log_level = :info
