@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 module Lita
   module Actions
     class Base
