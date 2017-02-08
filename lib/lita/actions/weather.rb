@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Lita
   module Actions
     class Weather < Base
@@ -10,6 +11,7 @@ module Lita
             Utils::ContextPiper.pipe(r['context'], r['entities'], 'location', 'loc')
             r['context']
           end)
+
       end
     end
   end
