@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'simplecov'
 
 require 'coveralls'
@@ -32,4 +31,4 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
 end
 
-SESSION_ID = 'unique-1234'.freeze
+SESSION_ID = 'unique-1234'
