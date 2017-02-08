@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-wit'
-  spec.version       = '0.1.3'
+  spec.version       = '0.1.4'
   spec.authors       = ['Damien Bastin']
   spec.email         = ['damien.bastin@gmail.com']
   spec.description   = 'A Lita handler for Wit.'
