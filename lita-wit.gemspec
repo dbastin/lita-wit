@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Gem::Specification.new do |spec|
   spec.name          = 'lita-wit'
-  spec.version       = '0.1.2'
+  spec.version       = '0.1.3'
   spec.authors       = ['Damien Bastin']
   spec.email         = ['damien.bastin@gmail.com']
   spec.description   = 'A Lita handler for Wit.'
